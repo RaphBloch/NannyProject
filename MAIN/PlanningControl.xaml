@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="MAIN.PlanningControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MAIN"
+             mc:Ignorable="d">
+
+    <Expander Header="PLANNING" Height="auto" FontSize="20">
+        
+        <StackPanel>
+            <!--<CheckBox x:Name="checkAllDays"
+                    VerticalAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Margin="5"
+                    FontSize="18"
+                    FontStyle="Italic"
+                    Checked="CheckAllDays"
+                    Unchecked="UncheckAllDays">
+                Select all days
+            </CheckBox>-->
+            <StackPanel>
+
+                <local:DayControl x:Name="_sunday"/>
+
+                <local:DayControl x:Name="_monday"/>
+
+                <local:DayControl x:Name="_tuesday"/>
+
+                <local:DayControl x:Name="_wednesday"/>
+
+                <local:DayControl x:Name="_thursday"/>
+
+                <local:DayControl x:Name="_friday"/>
+
+                <local:DayControl x:Name="_saturday"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Expander>
+
+</UserControl>
